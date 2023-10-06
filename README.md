@@ -20,7 +20,7 @@ ls -la (list all the folders, including directory and hidden folders) (can also 
 
 ## This is a subheader
 
-# Update
+# Track your updates
 git status (shows all the files that are created, updated, and deleted)
 
 add a new file on VSC under demo_repo, called index.html
@@ -30,5 +30,14 @@ git status (again) (you will find out index.html has not been trackded, so we ne
 git add . (. is a regular expression, meaning to check all the things above, in both untracked and modified sections)
 git add index.html (alternatively, you can specify them individually)
 clear (used to clear the command lines above to make the terminal interface clearer)
+git status (check again, and they should be tracked)
+
+# Commit those updates
+git commit -m "this is the title" -m "this is for description box. this means message you want to leave, and supposedly, it should state what and why behind the commits you are making."
+
+# So far it's still only saved locally. We need to "push" it to Github. (if you haven't got your SSH key set up, you should do it beforehand so that GitHub recognizes your local system)
+git push origin master (origin represents the location of Git repository in the local system)
+
+
 
 
