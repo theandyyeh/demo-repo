@@ -18,3 +18,17 @@ git clone git@github.com:theandyyeh/demo-repo.git (this is to pull the repo from
 cd demo_repo (this is to change the directory of Visual Studio Code into demo_repo) (BTW, underscore will be replaced by hyphen in VSC)
 ls -la (list all the folders, including directory and hidden folders) (can also be written as "la" only) (those hidden folders you saw are the files that saved your commits, which means they are for version control)
 
+## This is a subheader
+
+# Update
+git status (shows all the files that are created, updated, and deleted)
+
+add a new file on VSC under demo_repo, called index.html
+put <div> Hello! </div> in it.
+
+git status (again) (you will find out index.html has not been trackded, so we need to tell Git to track it)
+git add . (. is a regular expression, meaning to check all the things above, in both untracked and modified sections)
+git add index.html (alternatively, you can specify them individually)
+clear (used to clear the command lines above to make the terminal interface clearer)
+
+
